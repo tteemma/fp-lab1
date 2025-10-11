@@ -1,0 +1,10 @@
+{
+  // Пусть OCaml Platform автоматически использует opam-switch
+  "ocaml.sandbox": "opam",
+  // Включить форматирование по сохранению с ocamlformat
+  "editor.formatOnSave": true,
+  // Отключить предупреждение про CRLF/LF, если мешает
+  "files.eol": "\n",
+  // Не обязательно, но удобно: 2 пробела
+  "editor.tabSize": 2
+}

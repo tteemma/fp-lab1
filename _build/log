@@ -1,0 +1,42 @@
+# dune runtest
+# OCAMLPARAM: unset
+# Shared cache: enabled-except-user-rules
+# Shared cache location: /Users/temo4ka/.cache/dune/db
+# Workspace root: /Users/temo4ka/ITMO/semester4/fp/lab-1
+# Auto-detected concurrency: 8
+# Dune context:
+#  { name = "default"
+#  ; kind = "default"
+#  ; profile = Dev
+#  ; merlin = true
+#  ; fdo_target_exe = None
+#  ; build_dir = In_build_dir "default"
+#  ; instrument_with = []
+#  }
+$ /Users/temo4ka/.opam/5.2.1/bin/ocamlc.opt -config > /var/folders/vr/b1yb1ty94897wqhzvn2bzz_c0000gn/T/dune_f7cf7f_output
+$ (cd _build/default && /Users/temo4ka/.opam/5.2.1/bin/ocamldep.opt -modules -impl lib/utils.ml) > _build/default/lib/.lib.objs/lib__Utils.impl.d
+$ (cd _build/default && /Users/temo4ka/.opam/5.2.1/bin/ocamldep.opt -modules -impl lib/p26.ml) > _build/default/lib/.lib.objs/lib__P26.impl.d
+$ (cd _build/default && /Users/temo4ka/.opam/5.2.1/bin/ocamldep.opt -modules -impl lib/p04.ml) > _build/default/lib/.lib.objs/lib__P04.impl.d
+$ (cd _build/default && /Users/temo4ka/.opam/5.2.1/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -49 -nopervasives -nostdlib -g -bin-annot -bin-annot-occurrences -I lib/.lib.objs/byte -no-alias-deps -opaque -o lib/.lib.objs/byte/lib.cmo -c -impl lib/lib.ml-gen)
+$ (cd _build/default && /Users/temo4ka/.opam/5.2.1/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -bin-annot-occurrences -I lib/.lib.objs/byte -I /Users/temo4ka/.opam/5.2.1/lib/ocaml/str -no-alias-deps -opaque -open Lib -o lib/.lib.objs/byte/lib__Utils.cmo -c -impl lib/utils.ml)
+$ (cd _build/default && /Users/temo4ka/.opam/5.2.1/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -bin-annot-occurrences -I lib/.lib.objs/byte -I /Users/temo4ka/.opam/5.2.1/lib/ocaml/str -no-alias-deps -opaque -open Lib -o lib/.lib.objs/byte/lib__P26.cmo -c -impl lib/p26.ml)
+$ (cd _build/default && /Users/temo4ka/.opam/5.2.1/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -bin-annot-occurrences -I lib/.lib.objs/byte -I /Users/temo4ka/.opam/5.2.1/lib/ocaml/str -no-alias-deps -opaque -open Lib -o lib/.lib.objs/byte/lib__P04.cmo -c -impl lib/p04.ml)
+$ (cd _build/default && /Users/temo4ka/.opam/5.2.1/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -bin-annot-occurrences -I test/.test_labwork1.eobjs/byte -I /Users/temo4ka/.opam/5.2.1/lib/alcotest -I /Users/temo4ka/.opam/5.2.1/lib/alcotest/engine -I /Users/temo4ka/.opam/5.2.1/lib/alcotest/stdlib_ext -I /Users/temo4ka/.opam/5.2.1/lib/astring -I /Users/temo4ka/.opam/5.2.1/lib/cmdliner -I /Users/temo4ka/.opam/5.2.1/lib/fmt -I /Users/temo4ka/.opam/5.2.1/lib/fmt/cli -I /Users/temo4ka/.opam/5.2.1/lib/fmt/tty -I /Users/temo4ka/.opam/5.2.1/lib/ocaml/str -I /Users/temo4ka/.opam/5.2.1/lib/ocaml/unix -I /Users/temo4ka/.opam/5.2.1/lib/re -I /Users/temo4ka/.opam/5.2.1/lib/stdlib-shims -I /Users/temo4ka/.opam/5.2.1/lib/uutf -I lib/.lib.objs/byte -no-alias-deps -opaque -o test/.test_labwork1.eobjs/byte/dune__exe__Test_labwork1.cmi -c -intf test/test_labwork1.mli)
+$ (cd _build/default && /Users/temo4ka/.opam/5.2.1/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -49 -nopervasives -nostdlib -g -I lib/.lib.objs/byte -I lib/.lib.objs/native -cmi-file lib/.lib.objs/byte/lib.cmi -no-alias-deps -opaque -o lib/.lib.objs/native/lib.cmx -c -impl lib/lib.ml-gen)
+$ (cd _build/default && /Users/temo4ka/.opam/5.2.1/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I lib/.lib.objs/byte -I lib/.lib.objs/native -I /Users/temo4ka/.opam/5.2.1/lib/ocaml/str -cmi-file lib/.lib.objs/byte/lib__Utils.cmi -no-alias-deps -opaque -open Lib -o lib/.lib.objs/native/lib__Utils.cmx -c -impl lib/utils.ml)
+$ (cd _build/default && /Users/temo4ka/.opam/5.2.1/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I lib/.lib.objs/byte -I lib/.lib.objs/native -I /Users/temo4ka/.opam/5.2.1/lib/ocaml/str -cmi-file lib/.lib.objs/byte/lib__P26.cmi -no-alias-deps -opaque -open Lib -o lib/.lib.objs/native/lib__P26.cmx -c -impl lib/p26.ml)
+$ (cd _build/default && /Users/temo4ka/.opam/5.2.1/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I lib/.lib.objs/byte -I lib/.lib.objs/native -I /Users/temo4ka/.opam/5.2.1/lib/ocaml/str -cmi-file lib/.lib.objs/byte/lib__P04.cmi -no-alias-deps -opaque -open Lib -o lib/.lib.objs/native/lib__P04.cmx -c -impl lib/p04.ml)
+$ (cd _build/default && /Users/temo4ka/.opam/5.2.1/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I test/.test_labwork1.eobjs/byte -I test/.test_labwork1.eobjs/native -I /Users/temo4ka/.opam/5.2.1/lib/alcotest -I /Users/temo4ka/.opam/5.2.1/lib/alcotest/engine -I /Users/temo4ka/.opam/5.2.1/lib/alcotest/stdlib_ext -I /Users/temo4ka/.opam/5.2.1/lib/astring -I /Users/temo4ka/.opam/5.2.1/lib/cmdliner -I /Users/temo4ka/.opam/5.2.1/lib/fmt -I /Users/temo4ka/.opam/5.2.1/lib/fmt/cli -I /Users/temo4ka/.opam/5.2.1/lib/fmt/tty -I /Users/temo4ka/.opam/5.2.1/lib/ocaml/str -I /Users/temo4ka/.opam/5.2.1/lib/ocaml/unix -I /Users/temo4ka/.opam/5.2.1/lib/re -I /Users/temo4ka/.opam/5.2.1/lib/stdlib-shims -I /Users/temo4ka/.opam/5.2.1/lib/uutf -I lib/.lib.objs/byte -I lib/.lib.objs/native -cmi-file test/.test_labwork1.eobjs/byte/dune__exe__Test_labwork1.cmi -no-alias-deps -opaque -o test/.test_labwork1.eobjs/native/dune__exe__Test_labwork1.cmx -c -impl test/test_labwork1.ml)
+$ (cd _build/default && /Users/temo4ka/.opam/5.2.1/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -a -o lib/lib.cmxa lib/.lib.objs/native/lib.cmx lib/.lib.objs/native/lib__Utils.cmx lib/.lib.objs/native/lib__P26.cmx lib/.lib.objs/native/lib__P04.cmx)
+$ (cd _build/default && /Users/temo4ka/.opam/5.2.1/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -o test/test_labwork1.exe /Users/temo4ka/.opam/5.2.1/lib/astring/astring.cmxa /Users/temo4ka/.opam/5.2.1/lib/cmdliner/cmdliner.cmxa /Users/temo4ka/.opam/5.2.1/lib/uutf/uutf.cmxa /Users/temo4ka/.opam/5.2.1/lib/alcotest/stdlib_ext/alcotest_stdlib_ext.cmxa /Users/temo4ka/.opam/5.2.1/lib/fmt/fmt.cmxa /Users/temo4ka/.opam/5.2.1/lib/fmt/cli/fmt_cli.cmxa /Users/temo4ka/.opam/5.2.1/lib/re/re.cmxa /Users/temo4ka/.opam/5.2.1/lib/stdlib-shims/stdlib_shims.cmxa /Users/temo4ka/.opam/5.2.1/lib/alcotest/engine/alcotest_engine.cmxa /Users/temo4ka/.opam/5.2.1/lib/ocaml/unix/unix.cmxa /Users/temo4ka/.opam/5.2.1/lib/fmt/tty/fmt_tty.cmxa /Users/temo4ka/.opam/5.2.1/lib/alcotest/alcotest.cmxa -I /Users/temo4ka/.opam/5.2.1/lib/alcotest /Users/temo4ka/.opam/5.2.1/lib/ocaml/str/str.cmxa lib/lib.cmxa test/.test_labwork1.eobjs/native/dune__exe__Test_labwork1.cmx)
+$ (cd _build/default/test && ./test_labwork1.exe)
+> Testing `labwork1'.
+> This run has ID `B3CN2PTD'.
+>
+>   [OK]          Euler 4           0   palindrome small [10..99].
+>   [OK]          Euler 4           1   palindrome full  [100..999].
+>   [OK]          Euler 26          0   quick sanity small.
+>   [OK]          Euler 26          1   all solvers d<1000.
+>
+> Full test results in `~/ITMO/semester4/fp/lab-1/_build/default/test/_build/_tests/labwork1'.
+> Test Successful in 0.171s. 4 tests run.

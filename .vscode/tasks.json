@@ -1,0 +1,36 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "dune: build",
+      "type": "shell",
+      "command": "eval $(opam env) && dune build",
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "run: p4",
+      "type": "shell",
+      "command": "eval $(opam env) && dune exec labwork1 -- p4",
+      "problemMatcher": []
+    },
+    {
+      "label": "run: p4 (100..999)",
+      "type": "shell",
+      "command": "eval $(opam env) && dune exec labwork1 -- p4 --min 100 --max 999",
+      "problemMatcher": []
+    },
+    {
+      "label": "run: p26",
+      "type": "shell",
+      "command": "eval $(opam env) && dune exec labwork1 -- p26",
+      "problemMatcher": []
+    },
+    {
+      "label": "run: p26 (<1000)",
+      "type": "shell",
+      "command": "eval $(opam env) && dune exec labwork1 -- p26 --limit 1000",
+      "problemMatcher": []
+    }
+  ]
+}

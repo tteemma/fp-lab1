@@ -1,0 +1,4 @@
+(library
+ (name lib)
+ (modules utils p04 p26)
+ (libraries str))
