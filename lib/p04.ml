@@ -54,21 +54,19 @@ let modular_pipeline ~min ~max =
 
 (* 4) Генерация через map (map -> fold) *)
 let map_generation ~min ~max =
+  let open List in
   let pairs =
-    let acc = ref [] in
-    for i = min to max do
-      for j = i to max do
-        acc := (i, j) :: !acc;
-      done
-    done;
-    !acc
+    init (max - min + 1) (fun k -> k + min)
+    |> concat_map (fun i ->
+         init (max - i + 1) (fun k -> k + i)
+         |> map (fun j -> (i, j)))
   in
   pairs
-  |> List.map (fun (i, j) -> i * j)
-  |> List.map (fun p -> (p, U.is_palindrome p))
-  |> List.fold_left
-       (fun b (p, ok) -> if ok && p > b then p else b)
+  |> map (fun (i, j) -> i * j)
+  |> fold_left (fun best p ->
+       if U.is_palindrome p && p > best then p else best)
        0
+
 
 
 (* 5) Вариант с циклами *)
